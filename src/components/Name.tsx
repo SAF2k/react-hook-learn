@@ -44,7 +44,7 @@ const Name = () => {
             increment and decrement the value as well as Reset the value to "0"
           </p>
           <p className="text-lg font-semibold pt-3">
-            Folder Location: src/components/CounterTwo.tsx
+            Folder Location: src/components/Name.tsx
           </p>
         </div>
       </div>
