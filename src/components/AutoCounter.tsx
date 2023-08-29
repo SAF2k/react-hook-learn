@@ -19,7 +19,7 @@ const AutoCounter = () => {
         header="UseEffect"
       >
         <div className="flex items-center flex-col gap-5 rounded-xl">
-          <h2 className="text-4xl">Increment by 1 : {count}</h2>
+          <h2 className="text-4xl font-semibold">Increment by 1 : {count}</h2>
         </div>
 
         <p className="text-xl w-[calc(100%-20%)]">
@@ -31,7 +31,7 @@ const AutoCounter = () => {
           the DOM.
         </p>
         <p className="text-lg font-semibold pt-3">
-          Folder Location: src/components/Update.tsx
+          Folder Location: src/components/AutoCounter.tsx
         </p>
       </Container>
       <div className="border-b-2 border-black"></div>

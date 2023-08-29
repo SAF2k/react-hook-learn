@@ -22,7 +22,7 @@ export default function Home(): ReactElement {
 
   return (
     <>
-      <div className="h-screen bg-gradient-to-b from-slate-900 to-gray-400">
+      <div className="h-screen bg-gradient-to-b from-gray-900 to-gray-600">
         <motion.div
           className="relative z-10 flex h-screen items-center md:h-[calc(100vh-116px)]"
           animate={{

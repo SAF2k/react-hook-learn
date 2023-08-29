@@ -4,6 +4,7 @@ import CounterTwo from "./components/CounterTwo";
 import Home from "./components/Home";
 import AddItem from "./components/AddItem";
 import AutoCounter from "./components/AutoCounter";
+import Timer from "./components/Timer";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Name />
         <AddItem />
         <AutoCounter />
+        <Timer />
       </div>
     </>
   );

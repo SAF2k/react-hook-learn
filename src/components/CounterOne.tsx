@@ -12,7 +12,7 @@ const CounterOne = () => {
   return (
     <>
       <Container
-        BackgroundColor="bg-gradient-to-b from-gray-400 to-orange-300"
+        BackgroundColor="bg-gradient-to-b from-gray-600 to-orange-300"
         ContainerColor="text-white bg-gradient-to-r from-slate-900 to-slate-700"
         header="Simple useState"
       >
