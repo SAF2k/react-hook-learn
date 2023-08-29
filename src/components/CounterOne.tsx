@@ -1,10 +1,10 @@
 import { useState } from "react";
 
-const Counter = () => {
+const CounterOne = () => {
   const initialValue = 0
   const [count, setCount] = useState(initialValue);
 
-  const increment = () => (count === 10 ? 10 : setCount(count + 1));
+  const increment = () => (setCount(count + 1));
   const decrement = () => (count === 0 ? 0 : setCount(count - 1));
   const reset = () => setCount(initialValue);
 
@@ -12,7 +12,7 @@ const Counter = () => {
     <>
       <div className="flex justify-center p-6 bg-gradient-to-b from-gray-400 to-orange-300 h-screen">
         <div className="flex justify-center flex-col items-center gap-[50px] h-[calc(100vh-50px)] w-[calc(100vw-510px)] bg-gradient-to-r from-slate-900 to-slate-700 text-white rounded-full">
-          <h1 className="text-5xl font-bold underline">Use State</h1>
+          <h1 className="text-5xl font-bold">Simple Use State</h1>
           <div className="text-4xl space-x-6 flex items-center border rounded-xl ">
             <button
               className="border shadow-sm px-5 rounded-l-xl"
@@ -39,12 +39,13 @@ const Counter = () => {
             increment and decrement the value as well as Reset the value to "0"
           </p>
           <p className="text-lg font-semibold pt-3">
-            Folder Location: src/components/Counter.tsx
+            Folder Location: src/components/CounterOne.tsx
           </p>
         </div>
       </div>
+      <div className="border-b-2 border-black"></div>
     </>
   );
 };
 
-export default Counter;
+export default CounterOne;

@@ -1,14 +1,14 @@
-import Counter from "./components/Counter";
+import CounterOne from "./components/CounterOne";
+import CounterTwo from "./components/CounterTwo";
 import Home from "./components/Home";
-import NotCounter from "./components/NotContore";
 
 function App() {
   return (
     <>
       <div className="">
         <Home />
-        <Counter />
-        <NotCounter />
+        <CounterOne />
+        <CounterTwo />
       </div>
     </>
   );
