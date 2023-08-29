@@ -60,7 +60,7 @@ const CounterTwo = () => {
           </p>
         </div>
       </div>
-      <div className="border-b-2 bg-black"></div>
+      <div className="border-b-2 border-black"></div>
     </>
   );
 };

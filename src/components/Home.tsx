@@ -1,10 +1,13 @@
 import { motion } from "framer-motion";
-import { ReactElement, useEffect, useRef } from "react";
+import { ReactElement, useContext, useEffect, useRef } from "react";
 import { HiOutlineArrowNarrowDown } from "react-icons/hi";
-import { renderCanvas } from "./renderCanvas";
+import { renderCanvas } from "../providers/renderCanvas";
+import { ScrollContext } from "../providers/ScrollProvider";
+
 
 export default function Home(): ReactElement {
   const ref = useRef<HTMLHeadingElement>(null);
+  const { scrollY } = useContext(ScrollContext);
 
   let progress = 0;
   const { current: elContainer } = ref;

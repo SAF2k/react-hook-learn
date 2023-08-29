@@ -1,4 +1,5 @@
 import CounterOne from "./components/CounterOne";
+import CounterThree from "./components/CounterThree";
 import CounterTwo from "./components/CounterTwo";
 import Home from "./components/Home";
 
@@ -9,6 +10,7 @@ function App() {
         <Home />
         <CounterOne />
         <CounterTwo />
+        <CounterThree />
       </div>
     </>
   );
