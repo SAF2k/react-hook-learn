@@ -33,7 +33,7 @@ export default function Home(): ReactElement {
                 React Hooks
               </h1>
               <h2 className="text-3xl font-medium opacity-80 sm:text-6xl md:text-6xl xl:text-7xl">
-                Make Changes here and alter for now
+              Discover the power and simplicity
               </h2>
             </div>
             <div className="absolute bottom-4 left-1/2 -translate-x-1/2 transform md:bottom-8">
