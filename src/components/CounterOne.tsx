@@ -12,7 +12,7 @@ const CounterOne = () => {
     <>
       <div className="flex justify-center p-6 bg-gradient-to-b from-gray-400 to-orange-300 h-screen">
         <div className="flex justify-center flex-col items-center gap-[50px] h-[calc(100vh-50px)] w-[calc(100vw-510px)] bg-gradient-to-r from-slate-900 to-slate-700 text-white rounded-full">
-          <h1 className="text-5xl font-bold">Simple Use State</h1>
+          <h1 className="text-5xl font-bold pb-12">Simple Use State</h1>
           <div className="text-4xl space-x-6 flex items-center border rounded-xl ">
             <button
               className="border shadow-sm px-5 rounded-l-xl"
