@@ -3,6 +3,7 @@ import Name from "./components/Name";
 import CounterTwo from "./components/CounterTwo";
 import Home from "./components/Home";
 import AddItem from "./components/AddItem";
+import AutoCounter from "./components/AutoCounter";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <CounterTwo />
         <Name />
         <AddItem />
+        <AutoCounter />
       </div>
     </>
   );
