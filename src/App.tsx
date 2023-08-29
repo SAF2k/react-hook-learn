@@ -1,7 +1,8 @@
 import CounterOne from "./components/CounterOne";
-import CounterThree from "./components/CounterThree";
+import Name from "./components/Name";
 import CounterTwo from "./components/CounterTwo";
 import Home from "./components/Home";
+import AddItem from "./components/AddItem";
 
 function App() {
   return (
@@ -10,7 +11,8 @@ function App() {
         <Home />
         <CounterOne />
         <CounterTwo />
-        <CounterThree />
+        <Name />
+        <AddItem />
       </div>
     </>
   );

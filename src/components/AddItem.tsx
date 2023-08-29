@@ -1,13 +1,13 @@
 import { useState } from "react";
 
-const CounterThree = () => {
-  const [name, setName] = useState({firstName: '', lastName: ''});  
+const AddItem = () => {
+  const [name, setName] = useState({ firstName: "", lastName: "" });
 
   return (
     <>
-      <div className="flex justify-center h-screen p-6 bg-gradient-to-t from-gray-400 via-orange-100 to-red-400">
-        <div className="flex justify-center flex-col items-center gap-[50px] h-[calc(100vh-50px)] w-[calc(100vw-510px)] bg-gradient-to-r from-slate-300 to-slate-500 text-black rounded-full">
-          <h1 className="text-5xl font-bold pb-12">Use State With Object</h1>
+      <div className="flex justify-center h-screen p-6 bg-gradient-to-t from-pink-500 via-fuchsia-300 to-gray-400">
+        <div className="flex justify-center flex-col items-center text-white rounded-3xl gap-[50px] h-[calc(100vh-50px)] w-[calc(100vw-510px)] bg-gradient-to-r from-slate-500 to-slate-800">
+          <h1 className="text-5xl font-bold pb-12">useState With Object</h1>
           <div className="flex items-center flex-col gap-5 rounded-xl">
             <label className="text-2xl font-bold" htmlFor="firstName">
               First Name
@@ -48,9 +48,9 @@ const CounterThree = () => {
           </p>
         </div>
       </div>
-      <div className="border-b-2 bg-black"></div>
+      <div className="border-b-2 border-black"></div>
     </>
   );
 };
 
-export default CounterThree;
+export default AddItem;

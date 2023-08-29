@@ -22,8 +22,8 @@ const CounterTwo = () => {
   return (
     <>
       <div className="flex justify-center h-screen p-6 bg-gradient-to-b from-orange-300 to-red-400">
-        <div className="flex justify-center flex-col items-center gap-[50px] h-[calc(100vh-50px)] w-[calc(100vw-510px)] bg-gradient-to-r from-violet-200 to-pink-200 text-black rounded-full">
-          <h1 className="text-5xl font-bold pb-12">Use State With Safety</h1>
+        <div className="flex justify-center flex-col items-center text-black rounded-3xl gap-[50px] h-[calc(100vh-50px)] w-[calc(100vw-510px)] bg-gradient-to-r from-violet-200 to-pink-200">
+          <h1 className="text-5xl font-bold pb-12">useState With Safety</h1>
           <div className="text-4xl flex items-center border rounded-xl border-black">
             <button
               className="border border-black shadow-sm px-4 rounded-l-xl"
