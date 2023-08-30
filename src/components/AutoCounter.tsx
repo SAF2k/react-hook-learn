@@ -22,7 +22,7 @@ const AutoCounter = () => {
           <h2 className="text-4xl font-semibold">Increment by 1 : {count}</h2>
         </div>
 
-        <p className="text-xl w-[calc(100%-20%)]">
+        <p className="text-xl w-[650px]">
           As you can see, the counter is incrementing by 1 every second. This is
           done by using the useEffect hook. The useEffect hook is used to
           perform side effects in a functional component. Side effects are

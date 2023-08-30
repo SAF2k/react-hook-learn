@@ -9,11 +9,11 @@ const Container = ({ children, BackgroundColor, ContainerColor, header }: Contai
 
   return (
     <>
-      <div className={`flex justify-center h-screen p-6 ${BackgroundColor}`}>
+      <div className={`flex justify-center h-screen lg:p-6 ${BackgroundColor}`}>
         <div
-          className={`flex justify-center flex-col items-center rounded-3xl gap-[50px] h-[calc(100vh-50px)] w-[calc(100vw-510px)] ${ContainerColor} `}
+          className={`flex justify-center flex-col items-center rounded-3xl gap-[50px] h-[calc(100vh-50px)] lg:w-[calc(100vw-30vh)] md:w-[90vw] sm:w-screen ${ContainerColor} `}
         >
-          <h1 className="text-5xl font-bold pb-12">{header}</h1>
+          <h1 className="lg:text-5xl md:text-3xl text-2xl font-bold pb-12">{header}</h1>
           {children}
         </div>
       </div>

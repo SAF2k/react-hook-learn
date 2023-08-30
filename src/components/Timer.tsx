@@ -2,13 +2,13 @@ import { useState, useEffect } from "react";
 import Container from "./Container";
 
 const Timer = () => {
-  const [sec, setSec] = useState(0);
-  const [min, setMin] = useState(0);
+  const [sec, setSec] = useState(55);
+  const [min, setMin] = useState(59);
   const [hour, setHour] = useState(0);
 
   useEffect(() => {
     setTimeout(() => {
-      if (sec === 60) {
+      if (sec === 59) {
         setSec(0);
         setMin((prevMin) => prevMin + 1);
       } else {
@@ -34,7 +34,7 @@ const Timer = () => {
           </h2>
         </div>
 
-        <p className="text-xl w-[calc(100%-20%)]">
+        <p className="text-xl w-[650px]">
           As you can see, the counter is incrementing by 1 every second. This is
           done by using the useEffect hook. The useEffect hook is used to
           perform side effects in a functional component. Side effects are

@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import Container from "./Container";
 
 const MouseTracker = () => {
+
   const [x, setX] = useState(0);
   const [y, setY] = useState(0);
 
@@ -9,11 +10,11 @@ const MouseTracker = () => {
   const logMousePosition = (e: any) => {
     setX(e.clientX);
     setY(e.clientY);
-  };
+  }
 
   useEffect(() => {
-    window.addEventListener("mousemove", logMousePosition);
-  }, []);
+   window.addEventListener('mousemove', logMousePosition);
+  }, []); 
 
   return (
     <>
@@ -28,7 +29,7 @@ const MouseTracker = () => {
           </h2>
         </div>
 
-        <p className="text-xl max-w-[calc(100%-20%)]">
+        <p className="text-xl w-[650px]">
           As you can see, the counter is incrementing by 1 every second. This is
           done by using the useEffect hook. The useEffect hook is used to
           perform side effects in a functional component. Side effects are

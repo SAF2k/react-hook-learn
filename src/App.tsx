@@ -6,11 +6,11 @@ import AddItem from "./components/AddItem";
 import AutoCounter from "./components/AutoCounter";
 import Timer from "./components/Timer";
 import MouseTracker from "./components/MouseTracker";
+import MouserEventToggle from "./components/MouserEventToggle";
 
 function App() {
   return (
     <>
-      <div className="">
         <Home />
         <CounterOne />
         <CounterTwo />
@@ -19,7 +19,7 @@ function App() {
         <AutoCounter />
         <Timer />
         <MouseTracker />
-      </div>
+        <MouserEventToggle />
     </>
   );
 }
