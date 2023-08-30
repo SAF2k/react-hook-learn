@@ -8,25 +8,25 @@ const Timer = () => {
 
   useEffect(() => {
     setTimeout(() => {
-        if(sec === 60) {
-            setSec(0);
-            setMin((prevMin) => prevMin + 1);
-        } else {
-            setSec((prevSec) => prevSec + 1);
-        }
-        if(min === 60) {
-            setMin(0);
-            setHour((prevHour) => prevHour + 1);
-        }
+      if (sec === 60) {
+        setSec(0);
+        setMin((prevMin) => prevMin + 1);
+      } else {
+        setSec((prevSec) => prevSec + 1);
+      }
+      if (min === 60) {
+        setMin(0);
+        setHour((prevHour) => prevHour + 1);
+      }
     }, 1000);
-  }, [sec, min, hour]);
+  }, [sec, min, hour]); //conditional rendering
 
   return (
     <>
       <Container
         BackgroundColor="bg-gradient-to-b from-rose-100 via-gray-400 to-slate-800"
         ContainerColor="text-black bg-gradient-to-r from-violet-200 to-pink-200"
-        header="UseEffect"
+        header="UseEffect with Conditional Rendering"
       >
         <div className="flex items-center flex-col gap-5 rounded-xl">
           <h2 className="text-4xl font-semibold">
@@ -46,7 +46,6 @@ const Timer = () => {
           Folder Location: src/components/Timer.tsx
         </p>
       </Container>
-      <div className="border-b-2 border-black"></div>
     </>
   );
 };

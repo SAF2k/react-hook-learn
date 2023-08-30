@@ -2,10 +2,10 @@ import { useState } from "react";
 import Container from "./Container";
 
 const CounterOne = () => {
-  const initialValue = 0
+  const initialValue = 0;
   const [count, setCount] = useState(initialValue);
 
-  const increment = () => (setCount(count + 1));
+  const increment = () => setCount(count + 1);
   const decrement = () => (count === 0 ? 0 : setCount(count - 1));
   const reset = () => setCount(initialValue);
 
@@ -45,8 +45,6 @@ const CounterOne = () => {
           Folder Location: src/components/CounterOne.tsx
         </p>
       </Container>
-      
-      <div className="border-b-2 border-black"></div>
     </>
   );
 };

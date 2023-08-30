@@ -62,7 +62,6 @@ const CounterTwo = () => {
           Folder Location: src/components/CounterTwo.tsx
         </p>
       </Container>
-      <div className="border-b-2 border-black"></div>
     </>
   );
 };

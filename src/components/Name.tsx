@@ -49,7 +49,6 @@ const Name = () => {
           Folder Location: src/components/Name.tsx
         </p>
       </Container>
-      <div className="border-b-2 border-black"></div>
     </>
   );
 };

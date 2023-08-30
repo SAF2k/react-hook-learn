@@ -4,7 +4,6 @@ import { HiOutlineArrowNarrowDown } from "react-icons/hi";
 import { renderCanvas } from "../providers/renderCanvas";
 import { ScrollContext } from "../providers/ScrollProvider";
 
-
 export default function Home(): ReactElement {
   const ref = useRef<HTMLHeadingElement>(null);
   const { scrollY } = useContext(ScrollContext);
@@ -64,7 +63,6 @@ export default function Home(): ReactElement {
           id="canvas"
         ></canvas>
       </div>
-      <div className="border-b-2 border-black"></div>
     </>
   );
 }

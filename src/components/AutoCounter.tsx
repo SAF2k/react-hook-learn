@@ -34,7 +34,6 @@ const AutoCounter = () => {
           Folder Location: src/components/AutoCounter.tsx
         </p>
       </Container>
-      <div className="border-b-2 border-black"></div>
     </>
   );
 };

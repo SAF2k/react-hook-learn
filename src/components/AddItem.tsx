@@ -76,7 +76,6 @@ const AddItem = () => {
           Folder Location: src/components/AddItem.tsx
         </p>
       </Container>
-      <div className="border-b-2 border-black"></div>
     </>
   );
 };
