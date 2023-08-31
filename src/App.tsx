@@ -9,6 +9,7 @@ import MouseTracker from "./components/MouseTracker";
 import MouserEventToggle from "./components/MouserEventToggle";
 import FetchData from "./components/FetchData";
 import CounterThree from "./components/CounterThree";
+import CounterFour from "./components/CounterFour";
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
         <MouserEventToggle />
         <FetchData />
         <CounterThree />
+        <CounterFour />
     </>
   );
 }
