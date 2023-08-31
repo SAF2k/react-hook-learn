@@ -10,6 +10,7 @@ import MouserEventToggle from "./components/MouserEventToggle";
 import FetchData from "./components/FetchData";
 import CounterThree from "./components/CounterThree";
 import CounterFour from "./components/CounterFour";
+import CounterFive from "./components/CounterFive";
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
         <FetchData />
         <CounterThree />
         <CounterFour />
+        <CounterFive />
     </>
   );
 }

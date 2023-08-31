@@ -9,14 +9,20 @@ const reducer = (state: number, action: string) => {
   } else if (action === "decrement") {
     return state - 1;
   } else if (action === "reset") {
-    return initialState;
+    return initialState
   } else {
     return state; 
   }
 };
 
-const CounterThree = () => {
+const CounterFive = () => {
   const [count, dispatch] = useReducer(reducer, initialState);
+  const [countTwo, dispatchTwo] = useReducer(reducer, initialState);
+
+  const reset = () => {
+    dispatch("reset");
+    dispatchTwo("reset");
+  }
   return (
     <>
       <Container
@@ -40,9 +46,25 @@ const CounterThree = () => {
             +
           </button>
         </div>
+        <div className="text-4xl flex items-center border rounded-xl border-black">
+          <button
+            disabled={countTwo === 0}
+            className="border border-black shadow-sm px-4 rounded-l-xl disabled:opacity-50"
+            onClick={() => dispatchTwo("decrement")}
+          >
+            -
+          </button>
+          <span className="px-4">{countTwo}</span>
+          <button
+            className="border border-black shadow-sm px-4 rounded-r-xl"
+            onClick={() => dispatchTwo("increment")}
+          >
+            +
+          </button>
+        </div>
         <button
           className="border border-black text-2xl px-6 py-2 rounded-xl bg-teal-500"
-          onClick={() => dispatch("reset")}
+          onClick={reset}
         >
           Reset
         </button>
@@ -58,4 +80,4 @@ const CounterThree = () => {
   );
 };
 
-export default CounterThree;
+export default CounterFive;

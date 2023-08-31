@@ -27,7 +27,7 @@ const CounterFour: React.FC = () => {
       <Container
         BackgroundColor="bg-gradient-to-b from-orange-300 to-red-400"
         ContainerColor="text-black bg-gradient-to-r from-violet-200 to-pink-200"
-        header="useState With Safety"
+        header="Complex useReducer"
       >
         <div className="text-4xl flex items-center border rounded-xl border-black">
           <button
