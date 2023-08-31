@@ -7,6 +7,8 @@ import AutoCounter from "./components/AutoCounter";
 import Timer from "./components/Timer";
 import MouseTracker from "./components/MouseTracker";
 import MouserEventToggle from "./components/MouserEventToggle";
+import FetchData from "./components/FetchData";
+import CounterThree from "./components/CounterThree";
 
 function App() {
   return (
@@ -20,6 +22,8 @@ function App() {
         <Timer />
         <MouseTracker />
         <MouserEventToggle />
+        <FetchData />
+        <CounterThree />
     </>
   );
 }

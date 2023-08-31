@@ -2,8 +2,8 @@ import { useState, useEffect } from "react";
 import Container from "./Container";
 
 const Timer = () => {
-  const [sec, setSec] = useState(55);
-  const [min, setMin] = useState(59);
+  const [sec, setSec] = useState(0);
+  const [min, setMin] = useState(0);
   const [hour, setHour] = useState(0);
 
   useEffect(() => {

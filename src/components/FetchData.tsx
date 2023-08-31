@@ -1,64 +1,51 @@
 import { useState, useEffect } from "react";
 import Container from "./Container";
 
-const MouserEventToggle = () => {
-  const [x, setX] = useState(0);
-  const [y, setY] = useState(0);
-  const [display, setDisplay] = useState(true);
+const FetchData = () => {
 
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  const logMousePosition = (e: any) => {
-    setX(e.clientX);
-    setY(e.clientY);
-  };
-
-  const toggleDisplay = () => {
-    setDisplay(!display);
-  };
+  const [post, setPost] = useState({id: 0, title: ""});
+  const [id, setId] = useState(1);
 
   useEffect(() => {
-    window.addEventListener("mousemove", logMousePosition);
-
-    return () => {
-      window.removeEventListener("mousemove", logMousePosition);
-    };
-  }, []);
+    fetch(`https://jsonplaceholder.typicode.com/posts/${id}`)
+      .then((response) => response.json())
+      .then((data) => setPost(data));
+  }, [id]);
 
   return (
     <>
       <Container
-        BackgroundColor="bg-gradient-to-b from-purple-100 via-yellow-400 to-red-500"
-        ContainerColor="text-black bg-gradient-to-r from-emerald-400 to-cyan-400"
+        BackgroundColor="bg-gradient-to-b from-red-500 via-gray-500 to-cyan-400"
+        ContainerColor="text-white bg-gradient-to-r from-blue-600 to-violet-600"
         header="useEffect with cleanup"
       >
-        <div className="flex items-center flex-col gap-5 rounded-xl">
+        <div className="text-4xl flex items-center border rounded-xl border-white">
           <button
-            className="bg-gradient-to-r from-green-400 to-blue-500 hover:from-pink-500 hover:to-yellow-500 text-white font-bold py-2 px-4 rounded"
-            onClick={toggleDisplay}
+            disabled={id === 1}
+            className="border border-white shadow-sm px-4 rounded-l-lg disabled:opacity-50"
+            onClick={() => setId(id === 1 ? 1 : id - 1)}
           >
-            Toggle Display
+            Previous Post
           </button>
-          {display && (
-            <h2 className="text-4xl font-semibold">
-              X - {x} Y - {y}
-            </h2>
-          )}
+          <button
+            className="border-white border px-11 rounded-r-lg shadow-sm"
+            onClick={() => setId((prevId) => prevId + 1)}
+          >
+            Next Post
+          </button>
+        </div>
+        <div className="w-[26vw] h-[17vh] lg:text-2xl flex border rounded-xl border-black flex-col py-2 text-black bg-gradient-to-tr from-rose-200 via-red-300-500 to-cyan-100">
+          <span className="p-4">Id : {post.id}</span>
+          <span className="p-4">Title : {post.title}</span>
         </div>
 
-        <p className="text-xl max-w-[calc(100%-20%)]">
-          As you can see, the counter is incrementing by 1 every second. This is
-          done by using the useEffect hook. The useEffect hook is used to
-          perform side effects in a functional component. Side effects are
-          anything that affects something outside of the scope of the component,
-          such as fetching data, setting up a subscription, or manually changing
-          the DOM.
-        </p>
+        <p className="text-xl w-[650px]"></p>
         <p className="text-lg font-semibold pt-3">
-          Folder Location: src/components/MouserEventToggle.tsx
+          Folder Location: src/components/FetchData.tsx
         </p>
       </Container>
     </>
   );
 };
 
-export default MouserEventToggle;
+export default FetchData;
