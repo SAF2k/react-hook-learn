@@ -28,7 +28,7 @@ const CounterFive = () => {
       <Container
         BackgroundColor="bg-gradient-to-b from-orange-300 to-red-400"
         ContainerColor="text-black bg-gradient-to-r from-violet-200 to-pink-200"
-        header="Simple useReducer"
+        header="Multiple useReducers"
       >
         <div className="text-4xl flex items-center border rounded-xl border-black">
           <button
@@ -73,7 +73,7 @@ const CounterFive = () => {
           increment and decrement the value as well as Reset the value to "0"
         </p>
         <p className="text-lg font-semibold pt-3">
-          Folder Location: src/components/CounterThree.tsx
+          Folder Location: src/components/CounterFive.tsx
         </p>
       </Container>
     </>
