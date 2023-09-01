@@ -12,6 +12,7 @@ import CounterThree from "./components/CounterThree";
 import CounterFour from "./components/CounterFour";
 import CounterFive from "./components/CounterFive";
 import ParentComponent from "./components/ParantComponent";
+import CounterSix from "./components/CounterSix";
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
         <CounterFour />
         <CounterFive />
         <ParentComponent />
+        <CounterSix />
     </>
   );
 }
