@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import Container from "./Container";
+import axios from "axios";
 
 const FetchData = () => {
 
@@ -7,9 +8,9 @@ const FetchData = () => {
   const [id, setId] = useState(1);
 
   useEffect(() => {
-    fetch(`https://jsonplaceholder.typicode.com/posts/${id}`)
-      .then((response) => response.json())
-      .then((data) => setPost(data));
+    axios.get(`https://jsonplaceholder.typicode.com/posts/${id}`)
+      .then(response => setPost(response.data))
+      .catch(error => console.log(error));
   }, [id]);
 
   return (

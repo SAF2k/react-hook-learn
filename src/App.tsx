@@ -11,6 +11,7 @@ import FetchData from "./components/FetchData";
 import CounterThree from "./components/CounterThree";
 import CounterFour from "./components/CounterFour";
 import CounterFive from "./components/CounterFive";
+import ParentComponent from "./components/ParantComponent";
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
         <CounterThree />
         <CounterFour />
         <CounterFive />
+        <ParentComponent />
     </>
   );
 }
