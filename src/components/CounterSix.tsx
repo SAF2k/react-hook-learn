@@ -24,7 +24,7 @@ const CounterSix = () => {
       <Container
         BackgroundColor="bg-gradient-to-b from-orange-300 to-red-400"
         ContainerColor="text-black bg-gradient-to-r from-violet-200 to-pink-200"
-        header="Simple useReducer"
+        header="useMemo Hook"
       >
         <div className="text-4xl flex items-center border rounded-xl border-black">
           <div className="flex flex-col items-center justify-center p-6">
