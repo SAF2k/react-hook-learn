@@ -25,41 +25,41 @@ const CounterFour: React.FC = () => {
   return (
     <>
       <Container
-        BackgroundColor="bg-gradient-to-b from-orange-300 to-red-400"
-        ContainerColor="text-black bg-gradient-to-r from-violet-200 to-pink-200"
+        BackgroundColor="bg-gradient-to-b from-orange-200 via-red-500 to-rose-800"
+        ContainerColor="text-white bg-gradient-to-r from-stone-500 to-stone-700"
         header="Complex useReducer"
       >
-        <div className="text-4xl flex items-center border rounded-xl border-black">
+        <div className="text-4xl flex items-center border rounded-xl border-white">
           <button
-          disabled={count < 5}
-            className="border border-black shadow-sm px-4 rounded-l-xl disabled:opacity-50"
+            disabled={count < 5}
+            className="border border-white shadow-sm px-4 rounded-l-xl disabled:opacity-50"
             onClick={() => dispatch({ type: "decrement", value: 5 })}
           >
             -5
           </button>
           <button
             disabled={count <= 0}
-            className="border-black border px-4 disabled:opacity-50"
+            className="border-white border px-4 disabled:opacity-50"
             onClick={() => dispatch({ type: "decrement", value: 1 })}
           >
             -
           </button>
           <span className="px-4">{count}</span>
           <button
-            className="border border-black px-4"
+            className="border border-white px-4"
             onClick={() => dispatch({ type: "increment", value: 1 })}
           >
             +
           </button>
           <button
-            className="border border-black shadow-sm px-4 rounded-r-xl"
+            className="border border-white shadow-sm px-4 rounded-r-xl"
             onClick={() => dispatch({ type: "increment", value: 5 })}
           >
             -5
           </button>
         </div>
         <button
-          className="border border-black text-2xl px-6 py-2 rounded-xl bg-teal-500"
+          className="border border-white text-2xl px-6 py-2 rounded-xl bg-teal-500"
           onClick={() => dispatch({ type: "reset" })}
         >
           Reset

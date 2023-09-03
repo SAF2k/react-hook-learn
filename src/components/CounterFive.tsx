@@ -26,8 +26,8 @@ const CounterFive = () => {
   return (
     <>
       <Container
-        BackgroundColor="bg-gradient-to-b from-orange-300 to-red-400"
-        ContainerColor="text-black bg-gradient-to-r from-violet-200 to-pink-200"
+        BackgroundColor="bg-gradient-to-b from-rose-800 via-yellow-600 to-cyan-200"
+        ContainerColor="text-black bg-gradient-to-r from-blue-200 to-cyan-200"
         header="Multiple useReducers"
       >
         <div className="text-4xl flex items-center border rounded-xl border-black">

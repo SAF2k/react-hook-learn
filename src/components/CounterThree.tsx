@@ -20,7 +20,7 @@ const CounterThree = () => {
   return (
     <>
       <Container
-        BackgroundColor="bg-gradient-to-b from-orange-300 to-red-400"
+        BackgroundColor="bg-gradient-to-b from-cyan-400 via-gray-400 to-orange-200"
         ContainerColor="text-black bg-gradient-to-r from-violet-200 to-pink-200"
         header="Simple useReducer"
       >
